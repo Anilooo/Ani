@@ -1,44 +1,48 @@
-body {
-    position: relative;
-    margin: 40px 150px 40px 150px;
-    background-color: f8f8f8;
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
     width: auto;
+    margin: 10%;
+    background-color: f8f8f8;
     height: 6000px;
-}
-.logo{
- display: inline;
-}
-header {
+  }
+  .logo{
+    display: inline;
+  }
+  header {
+    margin: 40px 150px 0 150px;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: chartreuse;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: chartreuse;
-}
-.nav-items {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    background-color: cornflowerblue;
-}
+  }
+  .nav-items {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      background-color: cornflowerblue;
+  }
 .nav-item {
-    padding: 10px;
+    padding: 5px;
     color: black;
 }
-.hero {
-    position: relative;
-    background-color: darkgreen;
-}
+
 .p1 {
     font-family: 'Karla', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
 }
 .p2 {
     
         font-family: 'Karla', sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
 }
 
@@ -52,18 +56,24 @@ h2 {
     font-weight: semi bold;
     font-size: 94px;
 }
+.hero {
+    background-color: crimson;
+    display: flex;
 
+}
 .hero-image {
-  float: right;
-  width: 50%;
-
-}
-.bio-sentence {
+    float: right;
     width: 50%;
-    float: left;
-    margin-top: 300px;
-    display: block;
-}
+    height: auto;
+  
+  }
+.bio-sentence {
+      width: 50%;
+      float: left;
+      padding-top: 300px;
+      padding-right: 40px;
+      display: block;
+  }
 .body-text {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,15 +92,19 @@ h2 {
     color: white;
 }
 .light {
-background-color: f8f8f8;
-color: 242422;
-border: 242422;
+background-color: #f8f8f8;
+color: #242422;
+border: #242422 2px solid;
+}
+#projects {
+    background-color: blue;
 }
 #projects-title {
+    display: flex;
     text-align: center;
-    flex: auto;
     list-style: none;
     flex-direction: column;
+    list-style: none;
 }
 .project-card {
     width: 100%;
